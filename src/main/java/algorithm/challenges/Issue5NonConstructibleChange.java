@@ -12,15 +12,15 @@ public class Issue5NonConstructibleChange {
      so it returns the current amount of change plus one. Otherwise, it adds the current coin to the amount of change created.
      Finally, it returns the current amount of change plus one. The time complexity is O(n log(n)) and the space complexity is O(1).
      */
-    public int nonConstructibleChange(int[] coins) {// 1,2,5
+    public int nonConstructibleChange(int[] coins) {
         int currentChangeCreated = 0;//
         Arrays.sort(coins);
-        for (int currentCoin : coins) {//1,1,2,3,5,7
+        for (int currentCoin : coins) {
             if (currentCoin > currentChangeCreated + 1) {
-                return currentChangeCreated + 1;//
+                return currentChangeCreated + 1;
             }
-            currentChangeCreated += currentCoin;//1,2,4,7,12,17,
+            currentChangeCreated += currentCoin;
         }
-        return currentChangeCreated + 1;//
+        return currentChangeCreated + 1;
     }
 }
