@@ -20,10 +20,17 @@ class Issue1TwoNumberSumTest {
 
     @Test
     void twoNumberSumOptimized() {
-
         int[] result = twoNumberSum.twoNumberSumOptimized(inputArray, 10);
         assertEquals(11, result[0]);
         assertEquals(-1, result[1]);
+    }
+
+    @Test
+    void twoNumberSumOptimizedLengthThree() {
+        int[] inputArray = new int[]{3, 2, 4};
+        int[] result = twoNumberSum.twoNumberSumOptimized(inputArray, 6);
+        assertEquals(2, result[0]);
+        assertEquals(4, result[1]);
     }
 
     @Test
@@ -50,8 +57,9 @@ class Issue1TwoNumberSumTest {
 
     @Test
     void twoNumberSum4() {
-        int[] numberSum = twoNumberSum.twoNumberSum4(inputArray, 10);
-        assertEquals(11, numberSum[0]);
-        assertEquals(-1, numberSum[1]);
+        int[] array = new int[]{3,2,4};
+        int[] numberSum = twoNumberSum.twoNumberSum5(array, 6);
+        assertEquals(1, numberSum[0]);
+        assertEquals(2, numberSum[1]);
     }
 }

@@ -86,4 +86,17 @@ public class Issue1TwoNumberSum {
         return new int[]{};
     }
 
+    // O(n) time | O(n) space
+    public int[] twoNumberSum5(int[] inputArray, int target) {
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < inputArray.length; i++) {
+            int potentialNumber = target - inputArray[i];
+            if (map.containsKey(potentialNumber)) {
+                return new int[]{map.get(potentialNumber), i};
+            } else {
+                map.put(inputArray[i], i);
+            }
+        }
+        return new int[]{};
+    }
 }
