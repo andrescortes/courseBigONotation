@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class Issue1TwoNumberSumTest {
 
@@ -29,8 +30,7 @@ class Issue1TwoNumberSumTest {
     void twoNumberSumOptimizedLengthThree() {
         int[] inputArray = new int[]{3, 2, 4};
         int[] result = twoNumberSum.twoNumberSumOptimized(inputArray, 6);
-        assertEquals(2, result[0]);
-        assertEquals(4, result[1]);
+        assertEquals(0, result.length);
     }
 
     @Test

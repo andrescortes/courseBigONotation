@@ -64,4 +64,58 @@ public class Problems {
         }
         return null;
     }
+
+    public String reverseString(String input) {
+        // Define the base-case / stopping condition
+        if (input.isEmpty()) {
+            return input;
+        }
+        // Do some work to shrink the problem space
+        return reverseString(input.substring(1)) + input.charAt(0);
+    }
+
+    public boolean isPalindrome(String input) {
+        // Define the base-case / stopping condition
+        if (input.isEmpty() || input.length() == 1) {
+            return true;
+        }
+        //Do some work to shrink the problem space
+        if (input.charAt(0) == input.charAt(input.length() - 1)) {
+            return isPalindrome(input.substring(1, input.length() - 1));
+        }
+        // Additional base-case to handle non-palindromes
+        return false;
+    }
+
+    public String findBinary(int decimal, String result) {
+        // Define the base-case / stopping condition
+        if (decimal == 0) {
+            return result;
+        }
+        // Variable to store the remainder
+        result = (decimal % 2) + result;
+        //Do some work to shrink the problem space
+        return findBinary(decimal / 2, result);
+    }
+
+    public int recursiveSummation(int inputNumber) {
+        if (inputNumber <= 1) {
+            return inputNumber;
+        }
+        return inputNumber + recursiveSummation(inputNumber - 1);
+    }
+
+    public int binarySearch(int[] array, int left, int right, int target) {
+        if (left > right) {
+            return -1;
+        }
+        int mid = (left + right) / 2;
+        if (array[mid] == target) {
+            return mid;
+        }
+        if (target < array[mid]) {
+            return binarySearch(array, left, mid - 1, target);
+        }
+        return binarySearch(array, mid + 1, right, target);
+    }
 }

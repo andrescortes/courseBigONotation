@@ -59,4 +59,50 @@ class ProblemsTest {
         String result = problems.gcdOfStrings(str1, str2);
         Assertions.assertNull(result);
     }
+
+    @Test
+    void reverseString() {
+        String input = "hello";
+        String result = problems.reverseString(input);
+        Assertions.assertEquals("olleh", result);
+
+        input = "hello world";
+        result = problems.reverseString(input);
+        Assertions.assertEquals("dlrow olleh", result);
+    }
+
+    @Test
+    void isPalindrome() {
+        String input = "kayak";
+        boolean result = problems.isPalindrome(input);
+        Assertions.assertTrue(result);
+
+        input = "hello";
+        result = problems.isPalindrome(input);
+        Assertions.assertFalse(result);
+
+    }
+
+    @Test
+    void findBinary() {
+        int decimal = 237;
+        String result = problems.findBinary(decimal, "");
+        Assertions.assertEquals("11101101", result);
+    }
+
+    @Test
+    void recursiveSummation() {
+        int result = problems.recursiveSummation(5);
+        Assertions.assertEquals(15, result);
+    }
+
+    @Test
+    void binarySearch() {
+        int[] a = {1, 2, 3, 4, 5};
+        int left = 0;
+        int right = a.length - 1;
+        int x = 3;
+        int result = problems.binarySearch(a, left, right, x);
+        Assertions.assertEquals(2, result);
+    }
 }
