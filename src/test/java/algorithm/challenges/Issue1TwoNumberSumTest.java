@@ -3,10 +3,7 @@ package algorithm.challenges;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.util.Arrays;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class Issue1TwoNumberSumTest {
 
@@ -57,7 +54,7 @@ class Issue1TwoNumberSumTest {
 
     @Test
     void twoNumberSum4() {
-        int[] array = new int[]{3,2,4};
+        int[] array = new int[]{3, 2, 4};
         int[] numberSum = twoNumberSum.twoNumberSum5(array, 6);
         assertEquals(1, numberSum[0]);
         assertEquals(2, numberSum[1]);
