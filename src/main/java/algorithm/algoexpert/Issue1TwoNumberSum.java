@@ -1,4 +1,4 @@
-package algorithm.challenges;
+package algorithm.algoexpert;
 
 import java.util.HashMap;
 import java.util.List;

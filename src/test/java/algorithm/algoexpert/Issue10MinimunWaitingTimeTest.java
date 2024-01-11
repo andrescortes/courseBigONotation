@@ -1,4 +1,4 @@
-package algorithm.challenges;
+package algorithm.algoexpert;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;

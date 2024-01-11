@@ -1,4 +1,4 @@
-package algorithm.challenges;
+package algorithm.algoexpert;
 
 import algorithm.models.BST;
 import org.junit.jupiter.api.BeforeEach;
