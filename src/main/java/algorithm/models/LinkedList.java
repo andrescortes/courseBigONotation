@@ -24,4 +24,13 @@ public class LinkedList {
     public void setNext(LinkedList next) {
         this.next = next;
     }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("LinkedList{");
+        sb.append("value=").append(value);
+        sb.append(", next=").append(next.getValue());
+        sb.append('}');
+        return sb.toString();
+    }
 }
