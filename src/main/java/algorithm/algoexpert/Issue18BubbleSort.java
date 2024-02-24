@@ -6,7 +6,7 @@ public class Issue18BubbleSort {
     }
 
 
-    // Best  O(n) time | O(1) space
+    // Best  O(n) time | O(1) space - because we are not swapping any elements, the array is already sorted
     // Average O(n^2) time | O(1) space
     // Worst  O(n^2) time | O(1) space
     // Sample Input = [8, 5, 2, 9, 5, 6, 3]
