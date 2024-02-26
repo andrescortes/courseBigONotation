@@ -13,7 +13,6 @@ public class Issue26Semordnilap {
     // m is the length of the longest word
     public static ArrayList<ArrayList<String>> semordnilap(String[] words) {
         HashSet<String> wordSet = new HashSet<>(Arrays.asList(words));
-        System.out.println("wordSet = " + wordSet);
         ArrayList<ArrayList<String>> semordnilapPairs = new ArrayList<>();
         for (String word : words) {
             String reverse = new StringBuilder(word).reverse().toString();
