@@ -6,7 +6,7 @@ import java.util.Set;
 
 public class Issue24GenerateDocument {
 
-    public Issue24GenerateDocument() {
+    private Issue24GenerateDocument() {
     }
 
     // O(m * (n + m)) time | O(1) space where n is the length of the characters array and m is the length of the document, m is unique characters in the document

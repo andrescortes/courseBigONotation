@@ -2,7 +2,7 @@ package algorithm.algoexpert;
 
 public class Issue22CaesarCypherEncryptor {
 
-    public Issue22CaesarCypherEncryptor() {
+    private Issue22CaesarCypherEncryptor() {
     }
 
     // O(n) time | O(n) space

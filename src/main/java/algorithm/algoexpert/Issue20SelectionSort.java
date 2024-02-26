@@ -2,7 +2,7 @@ package algorithm.algoexpert;
 
 public class Issue20SelectionSort {
 
-    public Issue20SelectionSort() {}
+    private Issue20SelectionSort() {}
 
     // Best: O(n^2) time | O(1) space
     // Average: O(n^2) time | O(1) space

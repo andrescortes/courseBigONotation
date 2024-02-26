@@ -2,7 +2,7 @@ package algorithm.algoexpert;
 
 public class Issue23RunLengthEncoding {
 
-    public Issue23RunLengthEncoding() {
+    private Issue23RunLengthEncoding() {
     }
 
     // O(n) time | O(n) space where n is the length of the string

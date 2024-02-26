@@ -2,7 +2,7 @@ package algorithm.algoexpert;
 
 public class Issue21PalindromeCheck {
 
-    public Issue21PalindromeCheck() {
+    private Issue21PalindromeCheck() {
     }
 
     // Best: O(n) time | O(n) space
