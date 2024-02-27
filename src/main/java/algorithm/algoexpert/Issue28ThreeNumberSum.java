@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Issue27ThreeNumberSum {
+public class Issue28ThreeNumberSum {
 
-    private Issue27ThreeNumberSum() {
+    private Issue28ThreeNumberSum() {
     }
 
     // O(n^2) time | O(n) space - where n is the length of the array

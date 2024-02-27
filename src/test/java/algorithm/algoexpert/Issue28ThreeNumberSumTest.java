@@ -6,7 +6,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
-class Issue27ThreeNumberSumTest {
+class Issue28ThreeNumberSumTest {
 
     @Test
     void threeNumberSum() {
@@ -18,7 +18,7 @@ class Issue27ThreeNumberSumTest {
                 new Integer[]{-6, 1, 5}
         );
 
-        List<Integer[]> actual = Issue27ThreeNumberSum.threeNumberSum(array, targetSum);
+        List<Integer[]> actual = Issue28ThreeNumberSum.threeNumberSum(array, targetSum);
 
         assertArrayEquals(expected.toArray(), actual.toArray());
     }
@@ -38,7 +38,7 @@ class Issue27ThreeNumberSumTest {
                 new Integer[]{5, 6, 7}
         );
 
-        List<Integer[]> actual = Issue27ThreeNumberSum.threeNumberSum(array, targetSum);
+        List<Integer[]> actual = Issue28ThreeNumberSum.threeNumberSum(array, targetSum);
 
         assertArrayEquals(expected.toArray(), actual.toArray());
     }
